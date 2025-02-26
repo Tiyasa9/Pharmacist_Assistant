@@ -1,0 +1,17 @@
+/backend1/node_modules
+/backend1/package-lock.json
+/frontend1/node_modules
+/frontend1/package-lock.json
+/service-acc-key.json
+/az-medicine-dataset-of-india
+/model/ocr_hybrid.py
+/model/ocr_tes.py
+/model/tes_preprocess.py
+/model/test_ocr.py
+/model/test_vis.py
+/model/test.py
+/data/medicines
+/data/processed
+/data/raw
+/data/resized
+/data/thresholded
