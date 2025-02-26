@@ -24,15 +24,14 @@ The **Pharmacist Assistant** is an AI-powered application that:
 ### **Backend**  
 - **FastAPI (Python)** → OCR & AI processing  
 - **Node.js + Express.js** → Order management  
-- **MongoDB (GridFS)** → Prescription storage  
-- **Redis** → Caching for performance  
+- **MongoDB (GridFS)** → Prescription storage   
 
 ### **Frontend**  
-- **React.js / Next.js** → User Interface  
-- **Tailwind CSS / Material UI** → UI styling  
+- **React.js** → User Interface  
+- **Tailwind CSS** → UI styling  
 
 ### **AI & OCR**  
-- **Tesseract OCR / Google Vision API** → Text extraction  
+- **Google Vision API** → Text extraction  
 - **OpenCV** → Image preprocessing  
 - **Deep Learning (CNN/RNN)** → Signature forgery detection  
 
