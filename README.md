@@ -44,30 +44,46 @@ The **Pharmacist Assistant** is an AI-powered application that:
 ```bash
 git clone https://github.com/yourusername/Pharmacist-assistant.git
 cd Pharmacist-assistant
+```
 
 ### **📌 2️⃣ Set Up the Backend**  
+a. Creating environment
 ```bash
 cd backend
 python -m venv venv  # Create virtual environment
 source venv/bin/activate  # Activate (Linux/macOS)
 venv\Scripts\activate  # Activate (Windows)
-
+```
+b. Installing the required dependencies
+```bash
 pip install -r requirements.txt
-
+```
+c. Run FastAPI backend
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
 
-### **📌 3️⃣ Set Up the Frontend**  
+### **📌 3️⃣ Set Up the Frontend** 
+a. Installing all the React dependenies
 ```bash
 cd frontend
 npm install
-
+```
+b. Run React
 ```bash
 npm start
+```
 
 ### **📌 4️⃣ Database & Storage Setup**  
+a. Installing MongoDB
 ```bash
 mongod --dbpath ./data/db
-
+```
+b. Configuring environment variables
+```bash
+MONGO_URI=mongodb://localhost:27017/pharmacy
+TESSERACT_PATH=C:\Program Files\Tesseract-OCR\tesseract.exe
+SECRET_KEY=your_secret_key
+```
 
 
