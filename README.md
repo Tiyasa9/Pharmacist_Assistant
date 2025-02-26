@@ -57,10 +57,20 @@ b. Installing the required dependencies
 ```bash
 pip install -r requirements.txt
 ```
-c. Run FastAPI backend
+ c. Google Vision API setup
+  - Go to Google Cloud Console
+  - Create a new project or select an existing one
+  - Enable Google Vision API
+  - Go to APIs & Services → Credentials
+  - Create a new Service Account Key and download the JSON file
+  - Set the environment variable to authenticate the API:
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your-service-account.json"
 ```
+  - Test the API with: 
+```bash
+python test_google_vision.py
+```    
 
 ### **📌 3️⃣ Set Up the Frontend** 
 a. Installing all the React dependenies
@@ -77,12 +87,6 @@ npm start
 a. Installing MongoDB
 ```bash
 mongod --dbpath ./data/db
-```
-b. Configuring environment variables
-```bash
-MONGO_URI=mongodb://localhost:27017/pharmacy
-TESSERACT_PATH=C:\Program Files\Tesseract-OCR\tesseract.exe
-SECRET_KEY=your_secret_key
 ```
 
 
